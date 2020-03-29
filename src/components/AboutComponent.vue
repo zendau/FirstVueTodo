@@ -1,15 +1,7 @@
-
 <template>
   <div class="hello">
     <input type="text" v-model="message">
-    <p>{{msg}}</p>
-
-    <button v-on:click="reverseMsg">Реверс</button>
-    <ol>
-    <li v-bind:for="text in todos">
-      {{ text }}
-    </li>
-  </ol>
+    <p>{{msg}} and {{test}}</p>
   </div>
 </template>
 
@@ -18,21 +10,12 @@ export default {
   data() {
     return {
       message: "test",
-     todos: [
-      { text: 'Изучить JavaScript' },
-      { text: 'Изучить Vue' },
-      { text: 'Создать что-нибудь классное' }
-    ]
-    }
-  },
-  methods: {
-    reverseMsg: function(){
-      this.message = this.message.split("").reverse().join("");
     }
   },
   name: 'HelloWorld',
   props: {
-    msg: String
+    msg: String,
+    test: String
   }
 }
 </script>
