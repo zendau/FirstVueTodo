@@ -53,7 +53,8 @@ if(isset($_GET['ID'])){
     $data = json_decode($_GET['userLogin']);
     //$result = mysqli_query($link, "SELECT * FROM users WHERE login = '$data->login'");
     $result = mysqli_query($link, "SELECT * FROM users");
-    exit(json_encode($result));
+    $row = mysqli_fetch_assoc($result);
+    exit(json_encode($row));
     if($row = mysqli_fetch_assoc($result)){
         $temp_query = mysqli_query($link, "SELECT * FROM users WHERE pass = '$data->pass'");
         if($temp_row = mysqli_fetch_assoc($temp_query)){
