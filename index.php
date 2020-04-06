@@ -3,11 +3,13 @@ header("Access-Control-Allow-Origin: *");
 header("Access-Control-Allow-Headers: *");
 $message = [];
 
+$url=parse_url(getenv("CLEARDB_DATABASE_URL"));
+
 $link = mysqli_connect(
-    'localhost',  /* Хост, к которому мы подключаемся */
-    'root',       /* Имя пользователя */
-    '',   /* Используемый пароль */
-    'test');     /* База данных для запросов по умолчанию */
+    $url["host"],  /* Хост, к которому мы подключаемся */
+    $url["user"],       /* Имя пользователя */
+    $url["pass"],   /* Используемый пароль */
+    $db = substr($url["path"],1));     /* База данных для запросов по умолчанию */
 
 
 if (!$link) {
