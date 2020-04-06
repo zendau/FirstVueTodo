@@ -3,13 +3,7 @@ header("Access-Control-Allow-Origin: *");
 header("Access-Control-Allow-Headers: *");
 $message = [];
 
-$url=parse_url(getenv("CLEARDB_DATABASE_URL"));
-
-$link = mysqli_connect(
-    $url["host"],  /* Хост, к которому мы подключаемся */
-    $url["user"],       /* Имя пользователя */
-    $url["pass"],   /* Используемый пароль */
-    $db = substr($url["path"],1));     /* База данных для запросов по умолчанию */
+$link = mysqli_connect('us-cdbr-iron-east-01.cleardb.net', 'b8fa0b45d533de', '854a8390',  'heroku_f7433ea22012c61');     /* База данных для запросов по умолчанию */
 
 
 if (!$link) {
