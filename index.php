@@ -86,7 +86,7 @@ if(isset($_GET['ID'])){
             $result = mysqli_query($link, "INSERT users VALUES (null, '$data->login', '$data->pass', '$data->email', '$token')");
             $res = mysqli_insert_id($link);
             $result = mysqli_query($link, "INSERT todo VALUES ('$res', '{}')");
-            exit(json_encode($token));
+            exit(json_encode($result));
         }
         
     }
