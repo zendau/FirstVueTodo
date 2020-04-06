@@ -126,9 +126,6 @@ if(isset($_GET['ID'])){
 
 mysqli_close($link);
 
-
-exit(json_encode(404));
-
 ?>
 
 <!DOCTYPE html><html lang=en><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1"><link rel=icon href=/favicon.ico><title>test</title><link href=/css/chunk-096a0a0a.50942434.css rel=prefetch><link href=/css/chunk-5064cae9.cdf70087.css rel=prefetch><link href=/css/chunk-605697bc.0379afd3.css rel=prefetch><link href=/js/chunk-096a0a0a.53266809.js rel=prefetch><link href=/js/chunk-2d22d746.d109ff47.js rel=prefetch><link href=/js/chunk-5064cae9.7a4a7e4d.js rel=prefetch><link href=/js/chunk-605697bc.bd9d09d9.js rel=prefetch><link href=/css/app.9ef6ad97.css rel=preload as=style><link href=/css/chunk-vendors.73152c73.css rel=preload as=style><link href=/js/app.6f926e78.js rel=preload as=script><link href=/js/chunk-vendors.d7d2db4f.js rel=preload as=script><link href=/css/chunk-vendors.73152c73.css rel=stylesheet><link href=/css/app.9ef6ad97.css rel=stylesheet></head><body><noscript><strong>We're sorry but test doesn't work properly without JavaScript enabled. Please enable it to continue.</strong></noscript><div id=app></div><script src=/js/chunk-vendors.d7d2db4f.js></script><script src=/js/app.6f926e78.js></script></body></html>
