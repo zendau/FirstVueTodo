@@ -79,7 +79,7 @@ if(isset($_GET['ID'])){
             $result = mysqli_query($link, "INSERT users VALUES (null, '$data->login', '$data->pass', '$data->email', '$token')");
             $res = mysqli_insert_id($link);
             $result = mysqli_query($link, "INSERT todo VALUES ('$res', '{}')");
-            exit(json_encode($res));
+            exit(json_encode($token));
         }
         
     }
@@ -122,4 +122,4 @@ mysqli_close($link);
 
 ?>
 
-<!DOCTYPE html><html lang=en><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1"><link rel=icon href=/favicon.ico><title>test</title><link href=/css/chunk-5064cae9.cdf70087.css rel=prefetch><link href=/css/chunk-7ff36265.a93f86d0.css rel=prefetch><link href=/css/chunk-f06c728e.95fe5a0a.css rel=prefetch><link href=/js/chunk-2d22d746.d109ff47.js rel=prefetch><link href=/js/chunk-5064cae9.7a4a7e4d.js rel=prefetch><link href=/js/chunk-7ff36265.00cdf83d.js rel=prefetch><link href=/js/chunk-f06c728e.da2f0466.js rel=prefetch><link href=/css/app.9ef6ad97.css rel=preload as=style><link href=/css/chunk-vendors.73152c73.css rel=preload as=style><link href=/js/app.abca0893.js rel=preload as=script><link href=/js/chunk-vendors.d7d2db4f.js rel=preload as=script><link href=/css/chunk-vendors.73152c73.css rel=stylesheet><link href=/css/app.9ef6ad97.css rel=stylesheet></head><body><noscript><strong>We're sorry but test doesn't work properly without JavaScript enabled. Please enable it to continue.</strong></noscript><div id=app></div><script src=/js/chunk-vendors.d7d2db4f.js></script><script src=/js/app.abca0893.js></script></body></html>
+<!DOCTYPE html><html lang=en><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1"><link rel=icon href=/favicon.ico><title>test</title><link href=/css/chunk-5064cae9.cdf70087.css rel=prefetch><link href=/css/chunk-5a0a64ec.728bf3b9.css rel=prefetch><link href=/css/chunk-7ff36265.a93f86d0.css rel=prefetch><link href=/js/chunk-2d22d746.d109ff47.js rel=prefetch><link href=/js/chunk-5064cae9.7a4a7e4d.js rel=prefetch><link href=/js/chunk-5a0a64ec.a41df437.js rel=prefetch><link href=/js/chunk-7ff36265.00cdf83d.js rel=prefetch><link href=/css/app.9ef6ad97.css rel=preload as=style><link href=/css/chunk-vendors.73152c73.css rel=preload as=style><link href=/js/app.428cdb9d.js rel=preload as=script><link href=/js/chunk-vendors.d7d2db4f.js rel=preload as=script><link href=/css/chunk-vendors.73152c73.css rel=stylesheet><link href=/css/app.9ef6ad97.css rel=stylesheet></head><body><noscript><strong>We're sorry but test doesn't work properly without JavaScript enabled. Please enable it to continue.</strong></noscript><div id=app></div><script src=/js/chunk-vendors.d7d2db4f.js></script><script src=/js/app.428cdb9d.js></script></body></html>
