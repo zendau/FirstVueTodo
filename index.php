@@ -3,8 +3,7 @@ header("Access-Control-Allow-Origin: *");
 header("Access-Control-Allow-Headers: *");
 $message = [];
 
-$link = mysqli_connect('us-cdbr-iron-east-01.cleardb.net', 'b8fa0b45d533de', '854a8390',  'heroku_f7433ea22012c61'); 
-
+$link = mysqli_connect('eu-cdbr-west-02.cleardb.net', 'b51586fa1b116d', '153a6d0d',  'heroku_472a299a341907a'); 
 
 if (!$link) {
 printf("Невозможно подключиться к базе данных. Код ошибки: %s\n", mysqli_connect_error());
